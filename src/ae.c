@@ -59,7 +59,7 @@
         #endif
     #endif
 #endif
-
+//THREAD POOL HERE????- Cameron
 aeEventLoop *aeCreateEventLoop(int setsize) {
     aeEventLoop *eventLoop;
     int i;
@@ -455,7 +455,7 @@ int aeWait(int fd, int mask, long long milliseconds) {
         return retval;
     }
 }
-
+//THREAD POOL HERE?? - Cameron
 void aeMain(aeEventLoop *eventLoop) {
     eventLoop->stop = 0;
     while (!eventLoop->stop) {
